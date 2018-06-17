@@ -35,7 +35,7 @@ app.get('*', function (req, res) {
 
 // Add URL to storage
 app.post('/', function (req, res) {
-  const url = req.body.url;
+  const url = req.body.url.trim();
   if(validator(url)) {
     let recordIndex = memoryList.findIndex((item) => {
       return item === url;
