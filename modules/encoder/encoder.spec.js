@@ -10,7 +10,5 @@ describe('encoder', () => {
 
         const decodedNum = encoder.decode(string);
         expect(decodedNum).to.equal(number);
-
-        console.log('what is decode null', encoder.decode(''));
     })
 })
